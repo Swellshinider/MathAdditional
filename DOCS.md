@@ -2,7 +2,6 @@
 
 > Documentation for MathAdditional
 
-
 You can find the documentation for each class by clicking on the links below:
 
 - [MathAddiditonal](https://github.com/OnlyEduardo/MathAdditional/blob/master/DOCS/MathAddidional.md)
