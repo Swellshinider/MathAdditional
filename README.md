@@ -52,7 +52,7 @@ See ``DOCS`` for more information.
 - [x] Exceptions classes.
 - [x] Prime static class
 - [ ] Second Degree Equation Solver
-- [ ] Simple Base Conversor
+- [ ] Simple Base Converter
 
 ## Meta
 
