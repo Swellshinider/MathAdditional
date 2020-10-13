@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 /**
  *  The class {@code MAMatrix} consists of creating a matrix according to
- *  the ideal parameters for operations between matrices of the same type.
+ *  the ideal parameters for operations between matrices.
  *
  * @author Eduardo Ribeiro Leal
  * @version 1.0.0

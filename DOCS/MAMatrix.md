@@ -1,5 +1,7 @@
 ## MAMatrix class
 
+> MAMatrix class documentation, all methods with description.
+
 ### Instantiating:
 ```
 public static void main(String[] args){
@@ -31,17 +33,70 @@ The MAMatrix Class already contains toString().
 <hr>
 
 ### Methods:
-> public double[][] multiply(MAMatrix other) throws IncompatibleMatrixException
+
+##### double[][] multiply(MAMatrix other) throws IncompatibleMatrixException
+
 
 returns a double[][], resulting from the multiplication between the matrix in which the function was called and "other".
 `IncompatibleMatrixException` is called when the matrices are incompatible to be multiplied.
 
-> public double[][] sum(MAMatrix other) throws IncompatibleMatrixException
+<hr>
+
+##### double[][] sum(MAMatrix other) throws IncompatibleMatrixException
 
 returns a double[][], resulting from the sum of the matrix in which the function was called and "other".
-`IncompatibleMatrixException` is called when the matrices are incompatible to be added
+`IncompatibleMatrixException` is called when the matrices are incompatible to be added.
 
-> public double[][] sub(MAMatrix other) throws IncompatibleMatrixException
+<hr>
 
-returns a double [] [], the result of the subtraction between the matrix in which the function was called and "other".
-`IncompatibleMatrixException` is called when arrays are incompatible with being subtracted
+##### double[][] sub(MAMatrix other) throws IncompatibleMatrixException
+
+returns a double[][], the result of the subtraction between the matrix in which the function was called and "other".
+`IncompatibleMatrixException` is called when arrays are incompatible with being subtracted.
+
+<hr>
+
+##### double[][] getMatrix()
+
+returns a double[][], return the initial double[][] used to instantiate class.
+
+<hr>
+
+##### double getDeterminant() throws CannotUseMatrixException
+
+returns a double, determinant of matrix NxN.
+`CannotUseMatrixException` is called when matrix is not NxN (Mij, i != j).
+
+<hr>
+
+##### double[][] getInverse() throws CannotUseMatrixException
+
+returns a double[][], the inverse matrix, returns null if do not have inverse.
+`CannotUseMatrixException` is called when matrix is not NxN (Mij, i != j).
+
+<hr>
+
+##### getIdentity() throws CannotUseMatrixException
+
+returns a double[][], the identity matrix.
+`CannotUseMatrixException` is called when matrix is not NxN (Mij, i != j).
+
+<hr>
+
+##### getTranspose()
+
+returns a double, the transpose matrix.
+
+<hr>
+
+##### String toString()
+
+return a String with a nice format to read in terminal.
+
+<hr>
+
+## Meta
+
+Eduardo Ribeiro Leal – [Twitter](https://twitter.com/Eduardo_R_Leal) – eduardoleal.contact@gmail.com
+
+Distributed under the MIT license. See ``LICENSE`` for more information.

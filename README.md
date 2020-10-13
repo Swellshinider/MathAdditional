@@ -4,8 +4,23 @@
 
 ## Installation
 
+#### IntelliJ:
 - Download MathAdditional.jar
-- Drag it anywhere.
+- in intellij: 
+    - File => Project Structure => Global Libraries.
+    - plus => Java => MathAdditional.jar path => Ok => Apply
+- Ready to use.
+
+#### Eclipse:
+- Download MathAdditional.jar
+- In Eclipse:
+    - Project => Properties => Java Build Path.
+    - Libraries => Add External Jars => Apply.
+- Ready to use.
+
+#### Other:
+- Download MathAdditional.jar
+- import to your project.
 - Ready to use.
 
 ## Usage example
@@ -47,10 +62,11 @@ See ``DOCS`` for more information.
 
 ## Development
 
+- [x] MathAdditional class.
 - [x] Matrix class.
 - [x] Factorial class.
 - [x] Exceptions classes.
-- [x] Prime static class
+- [x] Prime class
 - [ ] Second Degree Equation Solver
 - [ ] Simple Base Converter
 
