@@ -6,7 +6,7 @@
 
 #### IntelliJ:
 - Download MathAdditional.jar
-- in intellij: 
+- In intellij: 
     - File => Project Structure => Global Libraries.
     - plus => Java => MathAdditional.jar path => Ok => Apply
 - Ready to use.
