@@ -4,7 +4,7 @@
 
 You can find the documentation for each class by clicking on the links below:
 
-- [MathAddiditonal](https://github.com/OnlyEduardo/MathAdditional/blob/master/DOCS/MathAddidional.md)
+- [MathAdditional](https://github.com/OnlyEduardo/MathAdditional/blob/master/DOCS/MathAddidional.md)
 is a non-instantiable class, with static parameters for free use.
 
 - [MAMatrix](https://github.com/OnlyEduardo/MathAdditional/blob/master/DOCS/MAMatrix.md)
@@ -15,6 +15,8 @@ is an instantiable class with some useful methods
 
 - [Prime](https://github.com/OnlyEduardo/MathAdditional/blob/master/DOCS/Prime.md)
 is a non-instantiable class, with static parameters related to matrices.
+
+Future classes will be added here.
 
 ## Meta
 

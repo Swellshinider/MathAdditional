@@ -1,6 +1,6 @@
 ## MAMatrix class
 
-> MAMatrix class documentation, all methods with description.
+> MAMatrix class documentation, the class MAMatrix consists of creating a matrix according to the ideal parameters for operations between matrices.
 
 ### Instantiating:
 ```
@@ -28,7 +28,7 @@ output:
 [1, 2]
 [3, 4]
 ```
-The MAMatrix Class already contains toString().
+The MAMatrix class already contains toString().
 
 <hr>
 
@@ -76,16 +76,16 @@ returns a double[][], the inverse matrix, returns null if do not have inverse.
 
 <hr>
 
-##### getIdentity() throws CannotUseMatrixException
+##### double[][] getIdentity() throws CannotUseMatrixException
 
 returns a double[][], the identity matrix.
 `CannotUseMatrixException` is called when matrix is not NxN (Mij, i != j).
 
 <hr>
 
-##### getTranspose()
+##### double[][] getTranspose()
 
-returns a double, the transpose matrix.
+returns a double[][], the transpose matrix.
 
 <hr>
 
