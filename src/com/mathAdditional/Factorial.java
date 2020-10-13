@@ -31,7 +31,7 @@ public class Factorial {
      *
      * @return returns the number of digits of the factorial
      */
-    public long getNDigitsOfFactorial(){
+    public int getNDigitsOfFactorial(){
         return factorial.bitLength();
     }
 
@@ -47,7 +47,7 @@ public class Factorial {
      *
      * @return returns the number of zeros at the end of the factorial
      */
-    public long getNZerosInFinal(){
+    public long getNZerosInTheEnd(){
         long result = 0;
 
         for(int i = 2; i <= val; i++)
