@@ -46,7 +46,7 @@ public class Prime {
         if(value == 2)
             return true;
 
-        for(int i = 2; i <= (int) Math.sqrt(value) + 1; i++){
+        for(int i = 2; i <= (long) Math.sqrt(value) + 1; i++){
             if(value % i == 0)
                 return false;
         }
@@ -72,7 +72,11 @@ public class Prime {
      */
     public static int previousPrimeOf(int value){
         value--;
-        while (!isPrime(value)) value--;
+        while (!isPrime(value)){
+            value--;
+            if(value <= 0)
+                return value;
+        }
         return value;
     }
 
