@@ -4,16 +4,16 @@
 
 You can find the documentation for each class by clicking on the links below:
 
-- [MathAdditional](https://github.com/OnlyEduardo/MathAdditional/blob/master/DOCS/MathAddidional.md)
+- [MathAdditional](DOCS/MathAdditional.md)
 is a non-instantiable class, with static parameters for free use.
 
-- [MAMatrix](https://github.com/OnlyEduardo/MathAdditional/blob/master/DOCS/MAMatrix.md)
+- [MAMatrix](DOCS/MAMatrix.md)
 is an instantiable class, and serves to perform operations between matrices, in addition to the internal methods of the matrix itself.
 
-- [Factorial](https://github.com/OnlyEduardo/MathAdditional/blob/master/DOCS/Factorial.md)
+- [Factorial](DOCS/Factorial.md)
 is an instantiable class with some useful methods
 
-- [Prime](https://github.com/OnlyEduardo/MathAdditional/blob/master/DOCS/Prime.md)
+- [Prime](DOCS/Prime.md)
 is a non-instantiable class, with static parameters related to matrices.
 
 Future classes will be added here.
