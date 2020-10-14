@@ -36,7 +36,7 @@ public class SecondDegreeFunction {
 
     /**
      *
-     * @param calculateComplex If the parameter is true
+     * @param calculateComplex If the parameter is true,
      * and the delta is negative the value returned will
      * be of the complex plane.
      * @return String[] with the values
