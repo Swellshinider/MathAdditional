@@ -8,12 +8,7 @@ package com.mathAdditional;
  * @version 1.0.0
  * @see com.mathAdditional
  */
-public class MathAdditional {
-
-    /**
-     * No instances for you
-     */
-    private MathAdditional(){}
+public interface MathAdditional {
 
     /**
      * The {@code double} value that is closer than any other to
