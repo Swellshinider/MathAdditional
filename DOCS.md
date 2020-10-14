@@ -16,6 +16,9 @@ is an instantiable class with some useful methods
 - [Prime](DOCS/Prime.md)
 is a non-instantiable class, with static parameters related to matrices.
 
+- [SecondDegreeFunction](DOCS/SecondDegreeFunction.md)
+is an instantiable class consists of facilitating the calculation of second degree equations.
+
 Future classes will be added here.
 
 ## Meta

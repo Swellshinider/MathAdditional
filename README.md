@@ -67,7 +67,7 @@ See ``DOCS`` for more information.
 - [x] Factorial class.
 - [x] Exceptions classes.
 - [x] Prime class
-- [ ] Second Degree Equation Solver
+- [x] Second Degree Equation Solver
 - [ ] Simple Base Converter
 
 ## Meta
