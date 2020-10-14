@@ -7,29 +7,17 @@ public class SecondDegreeFunction {
     private final double a;
     private final double b;
     private final double c;
-    private final boolean calculateComplex;
 
     public SecondDegreeFunction(double a, double b, double c) throws InvalidValue {
         this.a = a;
         this.b = b;
         this.c = c;
-        calculateComplex = false;
 
         if(a == 0)
             throw new InvalidValue("value 'a' cannot be zero");
     }
 
-    public SecondDegreeFunction(double a, double b, double c, boolean calculateComplex) throws InvalidValue {
-        this.a = a;
-        this.b = b;
-        this.c = c;
-        this.calculateComplex = calculateComplex;
-
-        if(a == 0)
-            throw new InvalidValue("value 'a' cannot be zero");
-    }
-
-    public Object calcFunction(){
+    public String[] calcFunction(boolean calculateComplex){
         boolean isLateral = false;
 
         double insideSq = Math.pow(b, 2) - (4 * a * c);
@@ -42,7 +30,7 @@ public class SecondDegreeFunction {
 
         if(isLateral){ // inComplexPlan
             if(!calculateComplex)
-                return "This function has no answer because delta is negative";
+                return new String[]{"This function has no answer because delta is negative", ""};
 
             StringBuilder x1 = new StringBuilder();
             StringBuilder x2 = new StringBuilder();
@@ -60,8 +48,8 @@ public class SecondDegreeFunction {
                     x2.append(p1).append(" - ").append("i");
                 }
             } else { // cannot divide p1 and p2 by 2*a
-                x1.append("(").append(b * -1).append(" + ").append(delta).append(") / ").append(2 * a);
-                x2.append("(").append(b * -1).append(" + ").append(delta).append(") / ").append(2 * a);
+                x1.append("(").append(b * -1).append(" + ").append(delta).append("i) / ").append(2 * a);
+                x2.append("(").append(b * -1).append(" + ").append(delta).append("i) / ").append(2 * a);
             }
 
             return new String[]{x1.toString(), x2.toString()};
@@ -69,8 +57,17 @@ public class SecondDegreeFunction {
         } else { // Not complex
             double x1 = ((b * -1) + delta) / (2 * a);
             double x2 = ((b * -1) - delta) / (2 * a);
-            return new double[]{x1, x2};
+            return new String[]{x1 + "", x2 + ""};
         }
+    }
+
+    public double[] calcFunction(){
+        String[] result = calcFunction(false);
+
+        if(result[1].equals(""))
+            return new double[]{Double.NaN, Double.NaN};
+        else
+            return new double[]{Double.parseDouble(result[0]), Double.parseDouble(result[1])};
     }
 
     public double getA() {
@@ -87,6 +84,6 @@ public class SecondDegreeFunction {
 
     @Override
     public String toString() {
-        return String.format("(%s)x² + (%s)x + (%s) = 0, S=%s", a, b, c, calcFunction());
+        return String.format("(%s)x² + (%s)x + (%s) = 0", a, b, c);
     }
 }
