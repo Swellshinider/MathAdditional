@@ -2,12 +2,29 @@ package com.mathAdditional;
 
 import com.mathAdditional.Exceptions.InvalidValue;
 
+/**
+ *  The class {@code SecondDegreeFunction} consists of facilitating
+ *  the calculation of second degree equations.
+ *
+ * @author Eduardo Ribeiro Leal
+ * @version 1.0.0
+ * @see com.mathAdditional
+ */
 public class SecondDegreeFunction {
 
+    // Private params
     private final double a;
     private final double b;
     private final double c;
 
+    /**
+     *
+     * @param a a from formula ax² + bx + c = 0
+     * @param b b from formula ax² + bx + c = 0
+     * @param c c from formula ax² + bx + c = 0
+     * @throws InvalidValue If the value a is equal to zero,
+     * it is no longer a second degree equation.
+     */
     public SecondDegreeFunction(double a, double b, double c) throws InvalidValue {
         this.a = a;
         this.b = b;
@@ -17,6 +34,13 @@ public class SecondDegreeFunction {
             throw new InvalidValue("value 'a' cannot be zero");
     }
 
+    /**
+     *
+     * @param calculateComplex If the parameter is true
+     * and the delta is negative the value returned will
+     * be of the complex plane.
+     * @return String[] with the values
+     */
     public String[] calcFunction(boolean calculateComplex){
         boolean isLateral = false;
 
@@ -61,6 +85,15 @@ public class SecondDegreeFunction {
         }
     }
 
+    /**
+     *
+     * If you return [Double.NaN, Double.NaN] it is because
+     * the delta value is negative, so there is no
+     * solution in the real set, use {@code calcFunction(boolean)}
+     * to calculate with complex numbers.
+     *
+     * @return a double[], with the values.
+     */
     public double[] calcFunction(){
         String[] result = calcFunction(false);
 
@@ -70,14 +103,26 @@ public class SecondDegreeFunction {
             return new double[]{Double.parseDouble(result[0]), Double.parseDouble(result[1])};
     }
 
+    /**
+     *
+     * @return double, a value
+     */
     public double getA() {
         return a;
     }
 
+    /**
+     *
+     * @return double, b value
+     */
     public double getB() {
         return b;
     }
 
+    /**
+     *
+     * @return double, c value
+     */
     public double getC() {
         return c;
     }
