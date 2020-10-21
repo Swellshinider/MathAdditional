@@ -68,7 +68,9 @@ See ``DOCS`` for more information.
 - [x] Exceptions classes.
 - [x] Prime class
 - [x] Second Degree Equation Solver
-- [ ] Simple Base Converter
+- [ ] thinking about what to add
+- [ ] thinking about what to add
+- [ ] thinking about what to add
 
 ## Meta
 
