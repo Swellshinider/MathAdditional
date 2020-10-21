@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MathAdditional:jar">
+    <output-path>$PROJECT_DIR$</output-path>
+    <root id="archive" name="MathAdditional.jar">
+      <element id="module-output" name="MathAdditional" />
+    </root>
+  </artifact>
+</component>
