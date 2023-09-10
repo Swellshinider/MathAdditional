@@ -68,12 +68,9 @@ See ``DOCS`` for more information.
 - [x] Exceptions classes.
 - [x] Prime class
 - [x] Second Degree Equation Solver
-- [ ] thinking about what to add
-- [ ] thinking about what to add
-- [ ] thinking about what to add
 
 ## Meta
 
-Eduardo Ribeiro Leal – [Twitter](https://twitter.com/Eduardo_R_Leal) – eduardoleal.contact@gmail.com
+Eduardo Ribeiro Leal – [Twitter](https://twitter.com/Swellshinider) – eduardoleal.contact@gmail.com
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
